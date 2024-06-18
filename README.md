@@ -6,7 +6,7 @@ This is a simple scripting program utilizing the cpu test of the *sysbench* tool
 
 - Obtaining the output as the number of events from *sysbench cpu --cpu-max-prime={num_prime} run --num-threads={thread_count}* with different cpu-max-prime and num-threads
 - A 2-segment linear regression is applied for each set of data (grouped by cpu-max-prime, each color line on the graph) in order to calculate the *breakpoint* (the x-value of the intersection between 2 linear lines) which happens to be the number of threads.
-- By default, there are 5 cases with varying *cpu-max-prime* arguments returning 5 results. The mode of those results is reported as the final answer.
+- By default, the program tests 10 iterations of calculating a prime number and records the performance. The mode of those results is reported as the final answer.
 
 ## Limitation
 
