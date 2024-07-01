@@ -145,9 +145,9 @@ def create_graph_file(df):
     plt.title(
         f"Performance of Sysbench CPU Benchmark with Time = {max_time}, Prime Number Limit = {prime_number}"
     )
-    plt.legend(title="Number of Iterations")
+    plt.legend(title="Iteration Nunmber")
     plt.xlabel("Number of Threads")
-    plt.ylabel("Number of Events")
+    plt.ylabel("Number of Calculations (Normalized)")
     plt.grid(True)
 
     # save graph as a png
